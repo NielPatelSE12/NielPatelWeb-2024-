@@ -76,11 +76,11 @@ body {
 }
 
 .personalpic {
-    max-width: 250px; /* Adjust the size as needed */
-    height: 250px;
+    max-width: 350px; /* Adjust the size as needed */
+    height: 50px;
     border: 2px solid #ccc;
     border-radius: 10px;
     position: absolute;
     top: 0;
-    right: -170px; /* Adjust this value based on how far right you want the image */
+    right: -185px; /* Adjust this value based on how far right you want the image */
 }
