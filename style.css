@@ -46,6 +46,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Make this container relative for absolute positioning of image */
 }
 
 .box {
@@ -70,11 +71,16 @@ body {
     line-height: 1.8;
 }
 
-.personalpic{
-    max-width: 100%;
+.container {
+    position: relative; /* Make this container relative for absolute positioning of image */
+}
+
+.personalpic {
+    max-width: 150px; /* Adjust the size as needed */
     height: auto;
-    display: block;
-    margin: 20px auto;
     border: 2px solid #ccc;
     border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: -170px; /* Adjust this value based on how far right you want the image */
 }
