@@ -69,3 +69,12 @@ body {
     font-size: 1.1em;
     line-height: 1.8;
 }
+
+.personalpic{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
