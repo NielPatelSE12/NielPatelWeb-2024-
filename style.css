@@ -39,6 +39,9 @@ body {
 .content {
     max-width: 800px;
     margin: 20px auto;
+}
+
+.box {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -59,4 +62,3 @@ body {
     font-size: 1.1em;
     line-height: 1.8;
 }
-
