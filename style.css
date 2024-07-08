@@ -72,8 +72,16 @@ body {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
+    .navbar ul {
+        text-align: center;
+    }
+
     .navbar li {
         display: block;
+        padding: 10px 0;
+    }
+
+    .navbar a {
         padding: 10px 0;
     }
 
@@ -97,11 +105,16 @@ body {
 
 @media (max-width: 480px) {
     .navbar ul {
-        text-align: left;
+        text-align: center;
     }
 
     .navbar li {
         text-align: center;
+        padding: 5px 0;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
     }
 
     .content {
