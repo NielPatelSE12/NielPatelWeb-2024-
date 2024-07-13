@@ -1,19 +1,22 @@
-/* style.css */
-
+/* Reset and General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: #f0f0f0 url("wallpaperhome.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-image: url('homepage.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #333;
 }
 
+/* Navbar Styling */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -21,66 +24,146 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar li {
-    display: inline;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 .navbar a:hover {
-    background-color: #555;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ddd;
 }
 
+/* Main Content Styling */
 .content {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.8); /* Added a background color with transparency for readability */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Make this container relative for absolute positioning of image */
-}
-
-.box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 120px auto 20px;
+    background-color: #FFB6C1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .content h1 {
-    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.content h2 {
-    font-size: 1.8em;
+/* Projects Table Styling */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.projects-table th,
+.projects-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    background-color: transparent; /* Ensure individual cells are transparent */
+}
+
+.projects-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.projects-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Use a slightly transparent color for even rows */
+}
+
+.projects-table td:first-child {
+    width: 200px;
+}
+
+/* Networking Section */
+.networking-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.networkbox {
+    flex: 1 1 300px;
+    padding: 20px;
+    background-color: transparent; /* Changed to transparent */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow */
+    border-radius: 0; /* Remove border-radius */
+    color: #333; /* Ensure text color is still readable */
+}
+
+.networkbox p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.networkbox img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow */
+    border-radius: 0; /* Remove border-radius */
 }
 
-.content p {
-    font-size: 1.1em;
-    line-height: 1.8;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 90%;
+        margin: 120px auto 20px;
+    }
+
+    .networking-section {
+        flex-direction: column;
+    }
+
+    .networkbox {
+        margin-bottom: 20px;
+    }
 }
 
-.container {
-    position: relative; /* Make this container relative for absolute positioning of image */
+/* Image Styling */
+.comptialogo {
+    height: 200px; 
+    width: 200px; 
+    display: block;
+    margin: 20px auto; 
+    border-radius: 50%; 
+    border: 4px solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
-.personalpic {
-    max-width: 450px; /* Adjust the size as needed */
-    height: 450px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    position: absolute;
-    top: -100px;
-    right: -365px; /* Adjust this value based on how far right you want the image */
+/* Personal Pic Container */
+.personal-pic-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin: 20px auto;
+}
+
+.homepagepictwo, .homepagepicone, .personalpic {
+    display: block;
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
 }
