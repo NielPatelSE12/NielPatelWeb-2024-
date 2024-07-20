@@ -168,6 +168,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    body {
+        background-size: contain; /* Ensure background scales appropriately */
+    }
+
     .navbar li {
         padding: 3px 0; /* Further reduced padding for very small screens */
     }
